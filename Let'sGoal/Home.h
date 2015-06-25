@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "KVNProgress.h"
+#import "KVNProgressConfiguration.h"
+@interface Home:UITabBarController
 
 
 @end

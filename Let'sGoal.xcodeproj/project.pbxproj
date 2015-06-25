@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		2FA5E2331B3B23E00075BC3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E2321B3B23E00075BC3D /* main.m */; };
 		2FA5E2361B3B23E00075BC3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E2351B3B23E00075BC3D /* AppDelegate.m */; };
-		2FA5E2391B3B23E00075BC3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E2381B3B23E00075BC3D /* ViewController.m */; };
+		2FA5E2391B3B23E00075BC3D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E2381B3B23E00075BC3D /* LoginViewController.m */; };
 		2FA5E23C1B3B23E00075BC3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA5E23A1B3B23E00075BC3D /* Main.storyboard */; };
 		2FA5E23E1B3B23E00075BC3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA5E23D1B3B23E00075BC3D /* Images.xcassets */; };
 		2FA5E2411B3B23E00075BC3D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA5E23F1B3B23E00075BC3D /* LaunchScreen.xib */; };
 		2FA5E24D1B3B23E00075BC3D /* Let_sGoalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E24C1B3B23E00075BC3D /* Let_sGoalTests.m */; };
+		2FA5E28E1B3B65880075BC3D /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E28A1B3B65880075BC3D /* KVNProgress.m */; };
+		2FA5E28F1B3B65880075BC3D /* KVNProgressConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E28C1B3B65880075BC3D /* KVNProgressConfiguration.m */; };
+		2FA5E2901B3B65880075BC3D /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA5E28D1B3B65880075BC3D /* KVNProgressView.xib */; };
+		2FA5E2951B3B67E50075BC3D /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E2921B3B67E50075BC3D /* UIImage+KVNEmpty.m */; };
+		2FA5E2961B3B67E50075BC3D /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E2941B3B67E50075BC3D /* UIImage+KVNImageEffects.m */; };
+		2FA5E29B1B3B6F520075BC3D /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E29A1B3B6F520075BC3D /* Home.m */; };
+		2FA5E29F1B3B8FD00075BC3D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA5E29C1B3B8FD00075BC3D /* FBSDKCoreKit.framework */; };
+		2FA5E2A01B3B8FD00075BC3D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA5E29D1B3B8FD00075BC3D /* FBSDKLoginKit.framework */; };
+		2FA5E2A11B3B8FD00075BC3D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA5E29E1B3B8FD00075BC3D /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +41,28 @@
 		2FA5E2321B3B23E00075BC3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2FA5E2341B3B23E00075BC3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FA5E2351B3B23E00075BC3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2FA5E2371B3B23E00075BC3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2FA5E2381B3B23E00075BC3D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2FA5E2371B3B23E00075BC3D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2FA5E2381B3B23E00075BC3D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		2FA5E23B1B3B23E00075BC3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FA5E23D1B3B23E00075BC3D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2FA5E2401B3B23E00075BC3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2FA5E2461B3B23E00075BC3D /* Let'sGoalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Let'sGoalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA5E24B1B3B23E00075BC3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA5E24C1B3B23E00075BC3D /* Let_sGoalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Let_sGoalTests.m; sourceTree = "<group>"; };
+		2FA5E2891B3B65880075BC3D /* KVNProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVNProgress.h; sourceTree = "<group>"; };
+		2FA5E28A1B3B65880075BC3D /* KVNProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVNProgress.m; sourceTree = "<group>"; };
+		2FA5E28B1B3B65880075BC3D /* KVNProgressConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVNProgressConfiguration.h; sourceTree = "<group>"; };
+		2FA5E28C1B3B65880075BC3D /* KVNProgressConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVNProgressConfiguration.m; sourceTree = "<group>"; };
+		2FA5E28D1B3B65880075BC3D /* KVNProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KVNProgressView.xib; sourceTree = "<group>"; };
+		2FA5E2911B3B67E50075BC3D /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
+		2FA5E2921B3B67E50075BC3D /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
+		2FA5E2931B3B67E50075BC3D /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
+		2FA5E2941B3B67E50075BC3D /* UIImage+KVNImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KVNImageEffects.m"; sourceTree = "<group>"; };
+		2FA5E2991B3B6BEC0075BC3D /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		2FA5E29A1B3B6F520075BC3D /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		2FA5E29C1B3B8FD00075BC3D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		2FA5E29D1B3B8FD00075BC3D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		2FA5E29E1B3B8FD00075BC3D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA5E2A01B3B8FD00075BC3D /* FBSDKLoginKit.framework in Frameworks */,
+				2FA5E29F1B3B8FD00075BC3D /* FBSDKCoreKit.framework in Frameworks */,
+				2FA5E2A11B3B8FD00075BC3D /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +107,16 @@
 		2FA5E22F1B3B23E00075BC3D /* Let'sGoal */ = {
 			isa = PBXGroup;
 			children = (
+				2FA5E29C1B3B8FD00075BC3D /* FBSDKCoreKit.framework */,
+				2FA5E29D1B3B8FD00075BC3D /* FBSDKLoginKit.framework */,
+				2FA5E29E1B3B8FD00075BC3D /* FBSDKShareKit.framework */,
+				2FA5E2881B3B65720075BC3D /* Third Party Classes */,
 				2FA5E2341B3B23E00075BC3D /* AppDelegate.h */,
 				2FA5E2351B3B23E00075BC3D /* AppDelegate.m */,
-				2FA5E2371B3B23E00075BC3D /* ViewController.h */,
-				2FA5E2381B3B23E00075BC3D /* ViewController.m */,
+				2FA5E2371B3B23E00075BC3D /* LoginViewController.h */,
+				2FA5E2381B3B23E00075BC3D /* LoginViewController.m */,
+				2FA5E29A1B3B6F520075BC3D /* Home.m */,
+				2FA5E2991B3B6BEC0075BC3D /* Home.h */,
 				2FA5E23A1B3B23E00075BC3D /* Main.storyboard */,
 				2FA5E23D1B3B23E00075BC3D /* Images.xcassets */,
 				2FA5E23F1B3B23E00075BC3D /* LaunchScreen.xib */,
@@ -117,6 +149,22 @@
 				2FA5E24B1B3B23E00075BC3D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FA5E2881B3B65720075BC3D /* Third Party Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2FA5E2911B3B67E50075BC3D /* UIImage+KVNEmpty.h */,
+				2FA5E2921B3B67E50075BC3D /* UIImage+KVNEmpty.m */,
+				2FA5E2931B3B67E50075BC3D /* UIImage+KVNImageEffects.h */,
+				2FA5E2941B3B67E50075BC3D /* UIImage+KVNImageEffects.m */,
+				2FA5E2891B3B65880075BC3D /* KVNProgress.h */,
+				2FA5E28A1B3B65880075BC3D /* KVNProgress.m */,
+				2FA5E28B1B3B65880075BC3D /* KVNProgressConfiguration.h */,
+				2FA5E28C1B3B65880075BC3D /* KVNProgressConfiguration.m */,
+				2FA5E28D1B3B65880075BC3D /* KVNProgressView.xib */,
+			);
+			name = "Third Party Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +250,7 @@
 				2FA5E23C1B3B23E00075BC3D /* Main.storyboard in Resources */,
 				2FA5E2411B3B23E00075BC3D /* LaunchScreen.xib in Resources */,
 				2FA5E23E1B3B23E00075BC3D /* Images.xcassets in Resources */,
+				2FA5E2901B3B65880075BC3D /* KVNProgressView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FA5E2391B3B23E00075BC3D /* ViewController.m in Sources */,
+				2FA5E28F1B3B65880075BC3D /* KVNProgressConfiguration.m in Sources */,
+				2FA5E28E1B3B65880075BC3D /* KVNProgress.m in Sources */,
+				2FA5E2961B3B67E50075BC3D /* UIImage+KVNImageEffects.m in Sources */,
+				2FA5E2391B3B23E00075BC3D /* LoginViewController.m in Sources */,
+				2FA5E2951B3B67E50075BC3D /* UIImage+KVNEmpty.m in Sources */,
 				2FA5E2361B3B23E00075BC3D /* AppDelegate.m in Sources */,
 				2FA5E2331B3B23E00075BC3D /* main.m in Sources */,
+				2FA5E29B1B3B6F520075BC3D /* Home.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +397,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Tyler/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = "Let'sGoal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +411,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Tyler/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = "Let'sGoal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
