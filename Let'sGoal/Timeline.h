@@ -11,7 +11,7 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "KVNProgress.h"
 #import "KVNProgressConfiguration.h"
-@interface Home:UITabBarController
+@interface Timeline:UIViewController
 
 
 @end

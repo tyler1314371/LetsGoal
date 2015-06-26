@@ -32,7 +32,7 @@
 	<key>FacebookAppID</key>
 	<string>914164761979603</string>
 	<key>FacebookDisplayName</key>
-	<string>Let's Goal</string>
+	<string>Let&apos;s Goal</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

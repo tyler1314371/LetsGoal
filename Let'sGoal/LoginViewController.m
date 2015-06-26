@@ -2,8 +2,8 @@
 //  ViewController.m
 //  Let'sGoal
 //
-//  Created by Chun-Chieh Niu on 2015-06-24.
-//  Copyright (c) 2015 Chun-Chieh Niu. All rights reserved.
+//  Created by LTJ on 2015-06-24.
+//  Copyright (c) 2015 LTJ. All rights reserved.
 //
 
 #import "LoginViewController.h"

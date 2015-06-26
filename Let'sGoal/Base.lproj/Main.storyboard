@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  Copyright (c) 2015 Chun-Chieh Niu. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="to7-rr-1du">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  Copyright (c) 2015 LTJ. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="to7-rr-1du">
                                 <rect key="frame" x="-60" y="532" width="441" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.98431378602981567" green="0.99215692281723022" blue="0.97647064924240112" alpha="1" colorSpace="deviceRGB"/>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="56" y="228"/>
         </scene>
-        <!--Item 2-->
+        <!--Contact-->
         <scene sceneID="OpK-nj-7y9">
             <objects>
-                <viewController id="oPt-zK-jcT" sceneMemberID="viewController">
+                <viewController id="oPt-zK-jcT" customClass="Contact" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="coD-4U-oh0"/>
                         <viewControllerLayoutGuide type="bottom" id="brP-9b-GMr"/>
@@ -97,16 +97,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="nmR-DO-dGv"/>
+                    <tabBarItem key="tabBarItem" title="Contact" id="nmR-DO-dGv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmy-Vb-bFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1226" y="600"/>
+            <point key="canvasLocation" x="1222" y="228"/>
         </scene>
-        <!--Item 1-->
+        <!--Me-->
+        <scene sceneID="EYe-hN-t6S">
+            <objects>
+                <viewController id="RWG-DI-hLu" customClass="Me" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YFk-JJ-a80"/>
+                        <viewControllerLayoutGuide type="bottom" id="AOA-Ea-WmL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ko3-3j-fFa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Me" id="pwr-ia-sGK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uEU-TD-rDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222" y="924"/>
+        </scene>
+        <!--Timeline-->
         <scene sceneID="bzT-FG-jdp">
             <objects>
-                <viewController id="w4L-mV-3eJ" sceneMemberID="viewController">
+                <viewController id="w4L-mV-3eJ" customClass="Timeline" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o0I-0G-ATr"/>
                         <viewControllerLayoutGuide type="bottom" id="yUB-Pz-wwu"/>
@@ -127,7 +146,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="wl8-bu-jWq"/>
+                    <tabBarItem key="tabBarItem" title="Timeline" id="wl8-bu-jWq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKi-ax-Z4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -147,6 +166,7 @@
                     <connections>
                         <segue destination="w4L-mV-3eJ" kind="relationship" relationship="viewControllers" id="usG-Qg-YPs"/>
                         <segue destination="oPt-zK-jcT" kind="relationship" relationship="viewControllers" id="vF2-co-HFs"/>
+                        <segue destination="RWG-DI-hLu" kind="relationship" relationship="viewControllers" id="Pwg-MC-HUB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obu-fh-jfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
