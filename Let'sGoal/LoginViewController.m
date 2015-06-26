@@ -11,27 +11,78 @@
 
 
 
+
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *Submit;
-@property (weak, nonatomic) IBOutlet UITextField *PWD;
-@property (weak, nonatomic) IBOutlet UITextField *USN;
+@property (strong, nonatomic) IBOutlet UITextField *PWD;
+@property (strong, nonatomic) IBOutlet UITextField *USN;
 
 @end
 
 @implementation LoginViewController
 
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    textField.textAlignment = NSTextAlignmentCenter;
+    textField.placeholder = nil;
+    
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    if (textField.tag == 0) {
+        textField.placeholder = @"UserName";
+    }else
+    {
+        textField.placeholder = @"Password";
+    }
+    
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-  
+
+    //set background img
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"BKG2.png"] drawInRect:self.view.bounds];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    
+    
+    //FBlogin button
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.readPermissions = @[@"public_profile", @"email"];
+    loginButton.readPermissions = @[@"user_about_me", @"user_birthday"];
     //loginButton.accessibilityFrame = CGRectMake(40,430,200,10);
-    loginButton.center = self.view.center;
+    //loginButton.center = self.view.center;
     loginButton.delegate = self;
+    loginButton.frame = CGRectMake(97,370,190,30);
     [self.view addSubview:loginButton];
     
     
+    
+    
+    //set up textfield rounded corner with quarz
+    self.PWD.delegate = self;
+    self.USN.delegate = self;
+    _PWD.textAlignment = NSTextAlignmentCenter;
+    _PWD.layer.cornerRadius = 15;
+    _PWD.clipsToBounds = YES;
+    _USN.layer.cornerRadius = 15;
+    _USN.clipsToBounds = YES;
+    _USN.textAlignment = NSTextAlignmentCenter;
+    //set up loginbutton color
+    #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:0.5]
+    _Submit.backgroundColor = UIColorFromRGB(0x66B2FF);
+    _Submit.layer.cornerRadius = 15;
+    _Submit.clipsToBounds = YES;
+    
+    
+    //added keyboard dismiss
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
     
 }
 
@@ -47,11 +98,6 @@
 }
 
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 - (IBAction)LoginClicked:(id)sender {
     
     [KVNProgress showWithStatus:@"Authenticating"];
@@ -124,4 +170,17 @@
 
 
 
+
+
+
+
+-(void)dismissKeyboard {
+    [_USN resignFirstResponder];
+    [_PWD resignFirstResponder];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 @end

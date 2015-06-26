@@ -23,6 +23,7 @@
 		2FA5E29F1B3B8FD00075BC3D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA5E29C1B3B8FD00075BC3D /* FBSDKCoreKit.framework */; };
 		2FA5E2A01B3B8FD00075BC3D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA5E29D1B3B8FD00075BC3D /* FBSDKLoginKit.framework */; };
 		2FA5E2A11B3B8FD00075BC3D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA5E29E1B3B8FD00075BC3D /* FBSDKShareKit.framework */; };
+		2FA5E2A71B3CA4D80075BC3D /* BKG2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA5E2A61B3CA4D80075BC3D /* BKG2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		2FA5E29C1B3B8FD00075BC3D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		2FA5E29D1B3B8FD00075BC3D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		2FA5E29E1B3B8FD00075BC3D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		2FA5E2A61B3CA4D80075BC3D /* BKG2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BKG2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				2FA5E2381B3B23E00075BC3D /* LoginViewController.m */,
 				2FA5E29A1B3B6F520075BC3D /* Home.m */,
 				2FA5E2991B3B6BEC0075BC3D /* Home.h */,
+				2FA5E2A61B3CA4D80075BC3D /* BKG2.png */,
 				2FA5E23A1B3B23E00075BC3D /* Main.storyboard */,
 				2FA5E23D1B3B23E00075BC3D /* Images.xcassets */,
 				2FA5E23F1B3B23E00075BC3D /* LaunchScreen.xib */,
@@ -249,6 +252,7 @@
 			files = (
 				2FA5E23C1B3B23E00075BC3D /* Main.storyboard in Resources */,
 				2FA5E2411B3B23E00075BC3D /* LaunchScreen.xib in Resources */,
+				2FA5E2A71B3CA4D80075BC3D /* BKG2.png in Resources */,
 				2FA5E23E1B3B23E00075BC3D /* Images.xcassets in Resources */,
 				2FA5E2901B3B65880075BC3D /* KVNProgressView.xib in Resources */,
 			);
@@ -474,6 +478,7 @@
 				2FA5E2521B3B23E00075BC3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FA5E2531B3B23E00075BC3D /* Build configuration list for PBXNativeTarget "Let'sGoalTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +487,7 @@
 				2FA5E2551B3B23E00075BC3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

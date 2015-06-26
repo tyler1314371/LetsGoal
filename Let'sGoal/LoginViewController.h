@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "KVNProgress.h"
 #import "KVNProgressConfiguration.h"
-@interface LoginViewController : UIViewController <FBSDKLoginButtonDelegate>
+@interface LoginViewController : UIViewController <FBSDKLoginButtonDelegate, UITextFieldDelegate, UITextViewDelegate>
 
 
 @end
