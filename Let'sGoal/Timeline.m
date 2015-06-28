@@ -9,7 +9,7 @@
 #import "Timeline.h"
 
 
-@interface UIViewController ()
+@interface Timeline ()
 
 
 @end

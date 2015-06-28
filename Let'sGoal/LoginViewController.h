@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import <Bolts/Bolts.h>
 #import <QuartzCore/QuartzCore.h>
 #import "KVNProgress.h"
 #import "KVNProgressConfiguration.h"

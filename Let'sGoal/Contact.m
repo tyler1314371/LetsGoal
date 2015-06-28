@@ -9,7 +9,7 @@
 #import "Contact.h"
 
 
-@interface UIViewController ()
+@interface Contact ()
 
 
 @end

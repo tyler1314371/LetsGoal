@@ -14,8 +14,10 @@
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *Submit;
+@property (weak, nonatomic) IBOutlet UIView *FBLogin;
 @property (strong, nonatomic) IBOutlet UITextField *PWD;
 @property (strong, nonatomic) IBOutlet UITextField *USN;
+@property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
 
 @end
 
@@ -41,6 +43,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    
     //set background img
     UIGraphicsBeginImageContext(self.view.frame.size);
     [[UIImage imageNamed:@"BKG2.png"] drawInRect:self.view.bounds];
@@ -50,13 +53,14 @@
     
     
     //FBlogin button
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.readPermissions = @[@"user_about_me", @"user_birthday"];
+    [FBSDKLoginButton alloc];
+    //loginButton.readPermissions = @[@"user_about_me", @"user_birthday"];
     //loginButton.accessibilityFrame = CGRectMake(40,430,200,10);
     //loginButton.center = self.view.center;
-    loginButton.delegate = self;
-    loginButton.frame = CGRectMake(97,370,190,30);
-    [self.view addSubview:loginButton];
+    _loginButton.delegate = self;
+    _loginButton.layer.cornerRadius = 15;
+    //loginButton.frame = CGRectMake(97,370,190,30);
+    //[self.view addSubview:loginButton];
     
     
     
@@ -86,16 +90,25 @@
     
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    if ([FBSDKAccessToken currentAccessToken]) {
+        [self performSegueWithIdentifier:@"SuccessLogin" sender:self];
+    }
+}
+
+
 -(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error
 {
-    //transition && grabdata?
+    //TODO - bring grab fb profile data here
+    
     [self performSegueWithIdentifier:@"SuccessLogin" sender:self];
 }
 
 -(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton
-{
-    //logout
+{    //logout
+
 }
+
 
 
 - (IBAction)LoginClicked:(id)sender {
