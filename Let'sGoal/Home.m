@@ -24,9 +24,7 @@
     [self.navigationController.navigationBar setTranslucent:YES];
     [self.navigationController.navigationBar setAlpha:0.5];
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
-    
-    
-    
+    [[UITabBar appearance] setTintColor:self.view.tintColor];
    
 
    

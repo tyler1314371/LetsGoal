@@ -555,16 +555,17 @@
             </objects>
             <point key="canvasLocation" x="2298.75" y="-504.92957746478822"/>
         </scene>
-        <!--Let's Goal-->
+        <!--Home-->
         <scene sceneID="GGa-xZ-Cwr">
             <objects>
                 <tabBarController id="7ov-Zz-iA1" customClass="Home" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Let's Goal" id="J8a-5a-Vnc"/>
+                    <navigationItem key="navigationItem" title="Home" id="J8a-5a-Vnc"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Frk-v3-n6s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="w4L-mV-3eJ" kind="relationship" relationship="viewControllers" id="usG-Qg-YPs"/>
@@ -578,7 +579,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Contact.png" width="30" height="30"/>
+        <image name="Contact.png" width="40" height="40"/>
         <image name="Profile.png" width="30" height="30"/>
         <image name="TimeLine.png" width="30" height="30"/>
         <image name="arrow_left.png" width="512" height="512"/>
