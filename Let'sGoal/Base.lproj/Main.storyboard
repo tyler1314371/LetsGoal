@@ -244,7 +244,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contact" id="nmR-DO-dGv"/>
+                    <tabBarItem key="tabBarItem" title="Contact" image="Contact.png" id="nmR-DO-dGv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmy-Vb-bFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -274,7 +274,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXR-Rx-LDJ" userLabel="Name">
                                 <rect key="frame" x="149" y="102" width="451" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Goal ID: Dummy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AV2-3G-peD" userLabel="ID">
@@ -301,7 +301,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzc-Le-0rC" userLabel="Setting">
                                 <rect key="frame" x="139" y="242" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="139" y="235" width="63" height="21"/>
@@ -310,10 +310,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gears.png" translatesAutoresizingMaskIntoConstraints="NO" id="WRe-T8-aSG" userLabel="Setting">
                                 <rect key="frame" x="39" y="236" width="34" height="34"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="229" width="34" height="34"/>
+                                    <rect key="frame" x="39" y="231" width="30" height="30"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwf-j8-yIK" userLabel="Donation_Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwf-j8-yIK" userLabel="Donation_Button">
                                 <rect key="frame" x="0.0" y="236" width="600" height="34"/>
                                 <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -324,19 +324,19 @@
                                     <action selector="DonationReleased:" destination="RWG-DI-hLu" eventType="touchUpInside" id="fbZ-5e-dhi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Support Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LB8-xr-Nrg" userLabel="Donation">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Support Us" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LB8-xr-Nrg" userLabel="Donation">
                                 <rect key="frame" x="139" y="242" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="139" y="295" width="88" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="IPW-AX-U79" userLabel="Donation_Pic">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money.png" translatesAutoresizingMaskIntoConstraints="NO" id="IPW-AX-U79" userLabel="Donation_Pic">
                                 <rect key="frame" x="39" y="236" width="34" height="34"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="289" width="34" height="34"/>
+                                    <rect key="frame" x="42" y="293" width="25" height="25"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -356,7 +356,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Me" id="pwr-ia-sGK"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile.png" id="pwr-ia-sGK" userLabel="Profile"/>
                     <connections>
                         <outlet property="Donation_Button" destination="Dwf-j8-yIK" id="WKl-tR-dAA"/>
                         <outlet property="ID" destination="AV2-3G-peD" id="36w-re-aEc"/>
@@ -424,7 +424,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H93-k8-HuK">
                                 <rect key="frame" x="139" y="242" width="63" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -536,7 +536,7 @@
             </objects>
             <point key="canvasLocation" x="1802" y="2088"/>
         </scene>
-        <!--Timeline-->
+        <!--MileStones-->
         <scene sceneID="bzT-FG-jdp">
             <objects>
                 <viewController id="w4L-mV-3eJ" customClass="Timeline" sceneMemberID="viewController">
@@ -549,7 +549,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Timeline" id="wl8-bu-jWq"/>
+                    <tabBarItem key="tabBarItem" title="MileStones" image="TimeLine.png" id="wl8-bu-jWq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKi-ax-Z4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -578,8 +578,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Contact.png" width="30" height="30"/>
+        <image name="Profile.png" width="30" height="30"/>
+        <image name="TimeLine.png" width="30" height="30"/>
         <image name="arrow_left.png" width="512" height="512"/>
         <image name="gears.png" width="512" height="512"/>
-        <image name="heart.png" width="2000" height="2000"/>
+        <image name="money.png" width="250" height="250"/>
     </resources>
 </document>

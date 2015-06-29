@@ -31,6 +31,8 @@
     self.view.backgroundColor = grey90;
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
 
+   
+    
     if ([FBSDKAccessToken currentAccessToken]) {
         [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
@@ -50,6 +52,8 @@
         _Profile_Pic.layer.borderWidth=1.0f;
         _Profile_Pic.layer.borderColor=[[UIColor whiteColor] CGColor];
     }
+    
+    
     
     
     

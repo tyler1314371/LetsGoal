@@ -18,7 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    UIColor* grey90 = [UIColor colorWithWhite: 0.90 alpha:1];
+    self.view.backgroundColor = grey90;
     
     
     
