@@ -60,7 +60,10 @@
 }
 
 
-
+-(void)viewWillAppear:(BOOL)animated
+{
+[[UITabBar appearance] setTintColor:self.view.tintColor];
+}
 
 
 - (IBAction)SettingClicked:(id)sender {

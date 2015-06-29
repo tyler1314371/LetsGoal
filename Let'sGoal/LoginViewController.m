@@ -12,6 +12,7 @@
 
 
 
+
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *Submit;
 @property (weak, nonatomic) IBOutlet UIView *FBLogin;
@@ -43,6 +44,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    //Read username/pwd from disc, if exists, no need to even display this viewcontroller
+    // Create dictionary of search parameters
+    NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:(__bridge id)(kSecClassInternetPassword),  kSecClass, @"dummy" , kSecAttrServer, kCFBooleanTrue, kSecReturnAttributes, kCFBooleanTrue, kSecReturnData, nil];
+    
+    // Look up server in the keychain
+    NSDictionary* found = nil;
+    CFDictionaryRef foundCF;
+    OSStatus err_r = SecItemCopyMatching((__bridge CFDictionaryRef) dict, (CFTypeRef*)&foundCF);
+    if (!err_r) {
+        
+    
+    found = (__bridge NSDictionary*)(foundCF);
+    
+    if (found){
+        
+    // Found
+    NSString* user = (NSString*) [found objectForKey:(__bridge id)(kSecAttrAccount)];
+    NSString* pass = [[NSString alloc] initWithData:[found objectForKey:(__bridge id)(kSecValueData)] encoding:NSUTF8StringEncoding];
+    _USN.text = user;
+    _PWD.text = pass;
+    [_Submit sendActionsForControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    }
+    
+    
+    
+    
     
     //set background img
     UIGraphicsBeginImageContext(self.view.frame.size);
@@ -54,15 +83,8 @@
     
     //FBlogin button
     [FBSDKLoginButton alloc];
-    //loginButton.readPermissions = @[@"user_about_me", @"user_birthday"];
-    //loginButton.accessibilityFrame = CGRectMake(40,430,200,10);
-    //loginButton.center = self.view.center;
     _loginButton.delegate = self;
     _loginButton.layer.cornerRadius = 15;
-    //loginButton.frame = CGRectMake(97,370,190,30);
-    //[self.view addSubview:loginButton];
-    
-    
     
     
     //set up textfield rounded corner with quarz
@@ -114,10 +136,20 @@
 - (IBAction)LoginClicked:(id)sender {
     
     [KVNProgress showWithStatus:@"Authenticating"];
+    [self LoginwithUsername:_USN.text Password:_PWD.text sender:sender];
+   
     
+
+}
+
+
+
+
+- (void) LoginwithUsername:(NSString*)user Password:(NSString*)pass sender:(id)sender{
+
     //string for the URL request
     NSString *myUrlString = @"http://demo.mysamplecode.com/JQuery/CountryInfo";
-    NSString *body =  [NSString stringWithFormat:@"countryCode=%@", _PWD.text];
+    NSString *body =  [NSString stringWithFormat:@"countryCode=%@", pass];
     NSURL *myUrl = [NSURL URLWithString:myUrlString];
     
     //create a mutable HTTP request
@@ -135,38 +167,52 @@
                          NSData *data,
                          NSError *error) {
          if ([data length] >0 && error == nil){
-                              dispatch_async(dispatch_get_main_queue(), ^{
-                                 
-                                  
-                                  NSString *myData = [[NSString alloc] initWithData:data
-                                                                           encoding:NSUTF8StringEncoding];
-                                  NSLog(@"JSON data = %@", myData);
-                                  NSError *error = nil;
-                                  
-                                  //parsing the JSON response
-                                  id jsonObject = [NSJSONSerialization
-                                                   JSONObjectWithData:data
-                                                   options:NSJSONReadingAllowFragments
-                                                   error:&error];
-                                  if (jsonObject != nil && error == nil){
-                                      
-                                      if([[[jsonObject objectForKey:@"countryInfo"] objectForKey:@"code"] isEqualToString:@"USA"])
-                                      {
-                                          [self performSegueWithIdentifier:@"SuccessLogin" sender:sender];
-                                          
-                                      }else
-                                      {
-                                          [KVNProgress showErrorWithStatus:@"Wrong Password"];
-                                      }
-                                      
-                                  }
-                                  
-                                  
-                                  
-                                  
-                                  
-                              });
-            
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 
+                 
+                 NSString *myData = [[NSString alloc] initWithData:data
+                                                          encoding:NSUTF8StringEncoding];
+                 NSLog(@"JSON data = %@", myData);
+                 NSError *error = nil;
+                 
+                 //parsing the JSON response
+                 id jsonObject = [NSJSONSerialization
+                                  JSONObjectWithData:data
+                                  options:NSJSONReadingAllowFragments
+                                  error:&error];
+                 if (jsonObject != nil && error == nil){
+                     
+                     if([[[jsonObject objectForKey:@"countryInfo"] objectForKey:@"code"] isEqualToString:@"USA"])
+                     {
+                         [self performSegueWithIdentifier:@"SuccessLogin" sender:sender];
+                         //successful login, time to save username/pwd to disc
+                         // Create dictionary of search parameters
+                         NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:(__bridge id)(kSecClassInternetPassword),  kSecClass,@"dummy" , kSecAttrServer, kCFBooleanTrue, kSecReturnAttributes, nil];
+                         
+                         // Remove any old values from the keychain
+                         OSStatus err = SecItemDelete((__bridge CFDictionaryRef) dict);
+                         
+                         // Create dictionary of parameters to add
+                         NSData* passwordData = [_PWD.text dataUsingEncoding:NSUTF8StringEncoding];
+                         dict = [NSDictionary dictionaryWithObjectsAndKeys:(__bridge id)(kSecClassInternetPassword), kSecClass, @"dummy" , kSecAttrServer, passwordData, kSecValueData, _USN.text, kSecAttrAccount, nil];
+                         
+                         // Try to save to keychain
+                         err = SecItemAdd((__bridge CFDictionaryRef) dict, NULL);
+                         
+                         
+                     }else
+                     {
+                         [KVNProgress showErrorWithStatus:@"Wrong Password"];
+                     }
+                     
+                 }
+                 
+                 
+                 
+                 
+                 
+             });
+             
          }
          else if ([data length] == 0 && error == nil){
              NSLog(@"Empty Response, not sure why?");
@@ -177,15 +223,7 @@
      }];
     
 
-    
-
 }
-
-
-
-
-
-
 
 -(void)dismissKeyboard {
     [_USN resignFirstResponder];

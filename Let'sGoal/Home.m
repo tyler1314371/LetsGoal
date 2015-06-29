@@ -25,17 +25,16 @@
     [self.navigationController.navigationBar setAlpha:0.5];
     [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackTranslucent];
     [[UITabBar appearance] setTintColor:self.view.tintColor];
-   
 
    
 }
 
 
 
-
 -(void)viewDidAppear:(BOOL)animated
 {
     [KVNProgress dismiss];
+    
 }
 
 

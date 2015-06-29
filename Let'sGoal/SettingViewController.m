@@ -48,6 +48,15 @@
     FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
     [loginManager logOut];
     FBSDKAccessToken.currentAccessToken = nil;
+    //Remove the saved password on the phone
+    // Create dictionary of search parameters
+    NSDictionary* dict = [NSDictionary dictionaryWithObjectsAndKeys:(__bridge id)(kSecClassInternetPassword),  kSecClass, @"dummy", kSecAttrServer, kCFBooleanTrue, kSecReturnAttributes, kCFBooleanTrue, kSecReturnData, nil];
+    
+    // Remove any old values from the keychain
+    OSStatus err = SecItemDelete((__bridge CFDictionaryRef) dict);
+    if (err) {
+        //skip, user probably is using facebook
+    }
     
 }
 

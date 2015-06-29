@@ -12,6 +12,8 @@
 		2F8883B61B40C463001A4659 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8883B51B40C463001A4659 /* SettingViewController.m */; };
 		2F8883B91B40C4A7001A4659 /* Contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8883B71B40C4A7001A4659 /* Contact.png */; };
 		2F8883BA1B40C4A7001A4659 /* TimeLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8883B81B40C4A7001A4659 /* TimeLine.png */; };
+		2F8883BC1B40CC2A001A4659 /* default_PP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F8883BB1B40CC2A001A4659 /* default_PP.jpg */; };
+		2F8883C01B40E81B001A4659 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F8883BF1B40E81B001A4659 /* Security.framework */; };
 		2FA5E2331B3B23E00075BC3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E2321B3B23E00075BC3D /* main.m */; };
 		2FA5E2361B3B23E00075BC3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E2351B3B23E00075BC3D /* AppDelegate.m */; };
 		2FA5E2391B3B23E00075BC3D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5E2381B3B23E00075BC3D /* LoginViewController.m */; };
@@ -55,6 +57,8 @@
 		2F8883B51B40C463001A4659 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		2F8883B71B40C4A7001A4659 /* Contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Contact.png; sourceTree = "<group>"; };
 		2F8883B81B40C4A7001A4659 /* TimeLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeLine.png; sourceTree = "<group>"; };
+		2F8883BB1B40CC2A001A4659 /* default_PP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default_PP.jpg; sourceTree = "<group>"; };
+		2F8883BF1B40E81B001A4659 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2FA5E22D1B3B23E00075BC3D /* Let'sGoal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let'sGoal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA5E2311B3B23E00075BC3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA5E2321B3B23E00075BC3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8883C01B40E81B001A4659 /* Security.framework in Frameworks */,
 				2FA5E2A01B3B8FD00075BC3D /* FBSDKLoginKit.framework in Frameworks */,
 				2FD2AB8D1B3DFA52009EF70E /* FacebookSDK.framework in Frameworks */,
 				2FA5E29F1B3B8FD00075BC3D /* FBSDKCoreKit.framework in Frameworks */,
@@ -142,6 +147,7 @@
 		2FA5E22F1B3B23E00075BC3D /* Let'sGoal */ = {
 			isa = PBXGroup;
 			children = (
+				2F8883BF1B40E81B001A4659 /* Security.framework */,
 				2FD2AB8C1B3DFA52009EF70E /* FacebookSDK.framework */,
 				2FD2AB8A1B3DFA49009EF70E /* Bolts.framework */,
 				2FA5E29C1B3B8FD00075BC3D /* FBSDKCoreKit.framework */,
@@ -171,6 +177,7 @@
 				2F8883B71B40C4A7001A4659 /* Contact.png */,
 				2F8883B81B40C4A7001A4659 /* TimeLine.png */,
 				2F8883B31B40BF9D001A4659 /* money.png */,
+				2F8883BB1B40CC2A001A4659 /* default_PP.jpg */,
 				2FA5E23A1B3B23E00075BC3D /* Main.storyboard */,
 				2FA5E23D1B3B23E00075BC3D /* Images.xcassets */,
 				2FA5E23F1B3B23E00075BC3D /* LaunchScreen.xib */,
@@ -306,6 +313,7 @@
 				2F8883B91B40C4A7001A4659 /* Contact.png in Resources */,
 				2F8883BA1B40C4A7001A4659 /* TimeLine.png in Resources */,
 				2F8883B41B40BF9D001A4659 /* money.png in Resources */,
+				2F8883BC1B40CC2A001A4659 /* default_PP.jpg in Resources */,
 				2FA5E2411B3B23E00075BC3D /* LaunchScreen.xib in Resources */,
 				2FA5E2A71B3CA4D80075BC3D /* BKG2.png in Resources */,
 				2FA5E23E1B3B23E00075BC3D /* Images.xcassets in Resources */,
