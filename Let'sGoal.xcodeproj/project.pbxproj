@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F6991B61B42112600A78B85 /* AddContact.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F6991B31B42112600A78B85 /* AddContact.png */; };
+		2F6991B71B42112600A78B85 /* AddProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F6991B41B42112600A78B85 /* AddProfile.png */; };
+		2F6991B81B42112600A78B85 /* AddTimeLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F6991B51B42112600A78B85 /* AddTimeLine.png */; };
+		2F6991BA1B42516E00A78B85 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6991B91B42516E00A78B85 /* AddContactViewController.m */; };
+		2F6991BD1B4254DA00A78B85 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F6991BC1B4254DA00A78B85 /* search.png */; };
 		2F8883B21B40B31B001A4659 /* Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8883B11B40B31B001A4659 /* Profile.png */; };
 		2F8883B41B40BF9D001A4659 /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8883B31B40BF9D001A4659 /* money.png */; };
 		2F8883B61B40C463001A4659 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8883B51B40C463001A4659 /* SettingViewController.m */; };
@@ -52,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F6991B31B42112600A78B85 /* AddContact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddContact.png; sourceTree = "<group>"; };
+		2F6991B41B42112600A78B85 /* AddProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddProfile.png; sourceTree = "<group>"; };
+		2F6991B51B42112600A78B85 /* AddTimeLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AddTimeLine.png; sourceTree = "<group>"; };
+		2F6991B91B42516E00A78B85 /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
+		2F6991BB1B42518A00A78B85 /* AddContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		2F6991BC1B4254DA00A78B85 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
 		2F8883B11B40B31B001A4659 /* Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile.png; sourceTree = "<group>"; };
 		2F8883B31B40BF9D001A4659 /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
 		2F8883B51B40C463001A4659 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
@@ -154,6 +165,7 @@
 				2FA5E29D1B3B8FD00075BC3D /* FBSDKLoginKit.framework */,
 				2FA5E29E1B3B8FD00075BC3D /* FBSDKShareKit.framework */,
 				2FA5E2881B3B65720075BC3D /* Third Party Classes */,
+				2FA5E23A1B3B23E00075BC3D /* Main.storyboard */,
 				2FA5E2341B3B23E00075BC3D /* AppDelegate.h */,
 				2FA5E2351B3B23E00075BC3D /* AppDelegate.m */,
 				2FA5E2371B3B23E00075BC3D /* LoginViewController.h */,
@@ -170,6 +182,8 @@
 				2FC223D31B40686E00FD9F19 /* SettingViewController.h */,
 				2FC223D41B4068EE00FD9F19 /* AboutMeViewController.m */,
 				2FC223D61B4068FD00FD9F19 /* AboutMeViewController.h */,
+				2F6991B91B42516E00A78B85 /* AddContactViewController.m */,
+				2F6991BB1B42518A00A78B85 /* AddContactViewController.h */,
 				2FA5E2A61B3CA4D80075BC3D /* BKG2.png */,
 				2FD2AB881B3DF6F2009EF70E /* gears.png */,
 				2FC223DB1B406DAF00FD9F19 /* arrow_left.png */,
@@ -178,7 +192,10 @@
 				2F8883B81B40C4A7001A4659 /* TimeLine.png */,
 				2F8883B31B40BF9D001A4659 /* money.png */,
 				2F8883BB1B40CC2A001A4659 /* default_PP.jpg */,
-				2FA5E23A1B3B23E00075BC3D /* Main.storyboard */,
+				2F6991B31B42112600A78B85 /* AddContact.png */,
+				2F6991B41B42112600A78B85 /* AddProfile.png */,
+				2F6991B51B42112600A78B85 /* AddTimeLine.png */,
+				2F6991BC1B4254DA00A78B85 /* search.png */,
 				2FA5E23D1B3B23E00075BC3D /* Images.xcassets */,
 				2FA5E23F1B3B23E00075BC3D /* LaunchScreen.xib */,
 				2FA5E2301B3B23E00075BC3D /* Supporting Files */,
@@ -311,6 +328,7 @@
 				2FA5E23C1B3B23E00075BC3D /* Main.storyboard in Resources */,
 				2F8883B21B40B31B001A4659 /* Profile.png in Resources */,
 				2F8883B91B40C4A7001A4659 /* Contact.png in Resources */,
+				2F6991BD1B4254DA00A78B85 /* search.png in Resources */,
 				2F8883BA1B40C4A7001A4659 /* TimeLine.png in Resources */,
 				2F8883B41B40BF9D001A4659 /* money.png in Resources */,
 				2F8883BC1B40CC2A001A4659 /* default_PP.jpg in Resources */,
@@ -319,6 +337,9 @@
 				2FA5E23E1B3B23E00075BC3D /* Images.xcassets in Resources */,
 				2FD2AB891B3DF6F2009EF70E /* gears.png in Resources */,
 				2FC223DC1B406DAF00FD9F19 /* arrow_left.png in Resources */,
+				2F6991B81B42112600A78B85 /* AddTimeLine.png in Resources */,
+				2F6991B71B42112600A78B85 /* AddProfile.png in Resources */,
+				2F6991B61B42112600A78B85 /* AddContact.png in Resources */,
 				2FA5E2901B3B65880075BC3D /* KVNProgressView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +365,7 @@
 				2FA5E2961B3B67E50075BC3D /* UIImage+KVNImageEffects.m in Sources */,
 				2FFD09D81B3CE1FE0025BA44 /* Profile.m in Sources */,
 				2FA5E2391B3B23E00075BC3D /* LoginViewController.m in Sources */,
+				2F6991BA1B42516E00A78B85 /* AddContactViewController.m in Sources */,
 				2FA5E2951B3B67E50075BC3D /* UIImage+KVNEmpty.m in Sources */,
 				2FFD09DE1B3CE29A0025BA44 /* Timeline.m in Sources */,
 				2FA5E2361B3B23E00075BC3D /* AppDelegate.m in Sources */,

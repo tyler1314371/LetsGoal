@@ -208,31 +208,48 @@
                         <outlet property="Submit" destination="Md5-FD-fKC" id="2Ch-nW-Joq"/>
                         <outlet property="USN" destination="7Am-SP-nsf" id="3W0-B1-cw7"/>
                         <outlet property="loginButton" destination="dnP-Ha-rtC" id="vJJ-rR-4AU"/>
-                        <segue destination="Z0x-n2-HrQ" kind="presentation" identifier="SuccessLogin" modalTransitionStyle="crossDissolve" id="MWL-8n-X6Z"/>
+                        <segue destination="7ov-Zz-iA1" kind="presentation" identifier="SuccessLogin" modalTransitionStyle="crossDissolve" id="cyC-GW-4wY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-798" y="253.5"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="i5t-H5-VhA">
+        <!--Contact-->
+        <scene sceneID="Y90-Du-I41">
             <objects>
-                <navigationController id="Z0x-n2-HrQ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="zBk-zb-QjD"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mzh-Ga-DFO">
+                <navigationController id="7Gg-e7-2gC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contact" image="Contact.png" id="QZa-04-RiT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AIJ-gl-EO0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="7ov-Zz-iA1" kind="relationship" relationship="rootViewController" id="UZu-qB-m1d"/>
+                        <segue destination="oPt-zK-jcT" kind="relationship" relationship="rootViewController" id="e4O-JI-j0D"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YwS-zI-sM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQo-F8-DRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="240.8450704225352"/>
+            <point key="canvasLocation" x="1752" y="240.75"/>
         </scene>
-        <!--Contact-->
+        <!--Profile-->
+        <scene sceneID="VTL-SZ-ZAF">
+            <objects>
+                <navigationController id="eYW-Sg-idC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile.png" id="7Hv-UG-CKw"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KLl-QJ-TV4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RWG-DI-hLu" kind="relationship" relationship="rootViewController" id="JpY-fN-BvO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJX-oC-UGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752" y="1175.25"/>
+        </scene>
+        <!--Let's Goal-->
         <scene sceneID="OpK-nj-7y9">
             <objects>
                 <viewController id="oPt-zK-jcT" customClass="Contact" sceneMemberID="viewController">
@@ -246,10 +263,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contact" image="Contact.png" id="nmR-DO-dGv"/>
+                    <navigationItem key="navigationItem" title="Let's Goal" id="UWk-At-aj9">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="5Vl-fd-JEh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xxQ-iA-pio">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="AddContact.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hzY-lg-1mi" kind="presentation" modalTransitionStyle="crossDissolve" id="Prk-2h-mSs"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hmy-Vb-bFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2291.25" y="240.8450704225352"/>
+            <point key="canvasLocation" x="3934.5" y="246.75"/>
         </scene>
         <!--Profile-->
         <scene sceneID="EYe-hN-t6S">
@@ -358,6 +389,17 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="Profile.png" id="pwr-ia-sGK" userLabel="Profile"/>
+                    <navigationItem key="navigationItem" title="Let's Goal" id="GlI-bE-smc">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xoO-Ew-4gB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sOa-JO-7SI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="Donation_Button" destination="Dwf-j8-yIK" id="WKl-tR-dAA"/>
                         <outlet property="ID" destination="AV2-3G-peD" id="36w-re-aEc"/>
@@ -370,7 +412,105 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uEU-TD-rDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2291" y="975.99999999999989"/>
+            <point key="canvasLocation" x="3942" y="1179.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r0v-MW-3n5">
+            <objects>
+                <navigationController id="hzY-lg-1mi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G2T-rR-q3d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="61J-NF-miC" kind="relationship" relationship="rootViewController" id="ulM-0R-tve"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cay-Fa-HPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4719" y="246.75"/>
+        </scene>
+        <!--Add Contacts-->
+        <scene sceneID="sE0-MV-vdI">
+            <objects>
+                <viewController id="61J-NF-miC" customClass="AddContactViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0DN-rc-4Mf"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Vs-cG-jjm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FX3-x9-kTP">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EM6-WC-Q18" userLabel="Setting_Button">
+                                <rect key="frame" x="0.0" y="236" width="600" height="34"/>
+                                <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="94" width="600" height="42"/>
+                                </variation>
+                                <connections>
+                                    <action selector="SettingClicked:" destination="RWG-DI-hLu" eventType="touchDown" id="a5k-n4-ynG"/>
+                                    <action selector="SettingReleased:" destination="RWG-DI-hLu" eventType="touchUpInside" id="17M-nN-eOl"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Let's Goal ID/Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R0T-DB-2Xo">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="76" y="100" width="285" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncr-Gc-uIp">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="search.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="100" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Search_Contact" destination="61J-NF-miC" eventType="touchUpInside" id="JNL-vr-LgS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="EM6-WC-Q18"/>
+                                <exclude reference="R0T-DB-2Xo"/>
+                                <exclude reference="Ncr-Gc-uIp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="EM6-WC-Q18"/>
+                                <include reference="R0T-DB-2Xo"/>
+                                <include reference="Ncr-Gc-uIp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Contacts" id="SXn-ov-nov">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Ra0-Y6-DYn">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zq1-0Q-ybr" userLabel="Back_Button">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrow_left.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Back" destination="61J-NF-miC" eventType="touchUpInside" id="BF5-ku-qG1"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="Search_Button" destination="Ncr-Gc-uIp" id="hz9-1y-JwT"/>
+                        <outlet property="Search_Field" destination="R0T-DB-2Xo" id="iN6-0E-pMN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYL-HD-y2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5457" y="246.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RAj-6f-NPK">
@@ -386,7 +526,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="088-Gm-cv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2645" y="1989"/>
+            <point key="canvasLocation" x="3340.5" y="2067"/>
         </scene>
         <!--Setting-->
         <scene sceneID="VTF-NY-VZB">
@@ -487,7 +627,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldo-ml-wgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2664" y="3088.5"/>
+            <point key="canvasLocation" x="3340.5" y="2950.5"/>
         </scene>
         <!--About_Me-->
         <scene sceneID="0GG-Da-lq5">
@@ -501,14 +641,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLk-WN-gzv" userLabel="Profile_Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLk-WN-gzv" userLabel="Profile_Button">
                                 <rect key="frame" x="0.0" y="89" width="600" height="116"/>
                                 <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99607849120000003" alpha="1" colorSpace="deviceRGB"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="147" width="600" height="116"/>
                                 </variation>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default_PP.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2h7-AU-eRu" userLabel="Profile_Pic">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_PP.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2h7-AU-eRu" userLabel="Profile_Pic">
                                 <rect key="frame" x="16" y="97" width="100" height="100"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="284" y="155" width="100" height="100"/>
@@ -546,7 +686,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WKU-rW-YZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="3122"/>
+            <point key="canvasLocation" x="4453.5" y="2839.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kIt-UB-BmZ">
@@ -562,9 +702,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhV-xk-0hP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1802" y="2088"/>
+            <point key="canvasLocation" x="4453.5" y="2082"/>
         </scene>
-        <!--MileStones-->
+        <!--TimeLine-->
+        <scene sceneID="p3j-QC-wfP">
+            <objects>
+                <navigationController id="Yla-s8-evP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="TimeLine" image="TimeLine.png" id="e6h-Ye-sGh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0cF-4S-voj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="w4L-mV-3eJ" kind="relationship" relationship="rootViewController" id="1dY-1m-UFz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sg8-0a-VH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="-908.25"/>
+        </scene>
+        <!--Let's Goal-->
         <scene sceneID="bzT-FG-jdp">
             <objects>
                 <viewController id="w4L-mV-3eJ" customClass="Timeline" sceneMemberID="viewController">
@@ -578,16 +735,28 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="MileStones" image="TimeLine.png" id="wl8-bu-jWq"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Let's Goal" id="pfj-5m-xCc">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="So3-6R-TL4">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RXZ-54-kin">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="AddTimeLine.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKi-ax-Z4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2298.75" y="-504.92957746478822"/>
+            <point key="canvasLocation" x="3942" y="-908.25"/>
         </scene>
         <!--Home-->
         <scene sceneID="GGa-xZ-Cwr">
             <objects>
                 <tabBarController id="7ov-Zz-iA1" customClass="Home" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Home" id="J8a-5a-Vnc"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Frk-v3-n6s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -596,9 +765,9 @@
                         <color key="selectedImageTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="w4L-mV-3eJ" kind="relationship" relationship="viewControllers" id="usG-Qg-YPs"/>
-                        <segue destination="oPt-zK-jcT" kind="relationship" relationship="viewControllers" id="vF2-co-HFs"/>
-                        <segue destination="RWG-DI-hLu" kind="relationship" relationship="viewControllers" id="Pwg-MC-HUB"/>
+                        <segue destination="Yla-s8-evP" kind="relationship" relationship="viewControllers" id="BXZ-0k-WCo"/>
+                        <segue destination="7Gg-e7-2gC" kind="relationship" relationship="viewControllers" id="MHy-fY-aCh"/>
+                        <segue destination="eYW-Sg-idC" kind="relationship" relationship="viewControllers" id="XlX-m5-fOp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obu-fh-jfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -607,6 +776,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AddContact.png" width="30" height="30"/>
+        <image name="AddTimeLine.png" width="30" height="30"/>
         <image name="Contact.png" width="40" height="40"/>
         <image name="Profile.png" width="30" height="30"/>
         <image name="TimeLine.png" width="30" height="30"/>
@@ -614,5 +785,6 @@
         <image name="default_PP.jpg" width="215" height="215"/>
         <image name="gears.png" width="512" height="512"/>
         <image name="money.png" width="250" height="250"/>
+        <image name="search.png" width="256" height="256"/>
     </resources>
 </document>

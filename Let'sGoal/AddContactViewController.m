@@ -6,18 +6,21 @@
 //  Copyright (c) 2015 LTJ. All rights reserved.
 //
 
-#import "Contact.h"
+#import "AddContactViewController.h"
 
 
-@interface Contact ()
+@interface AddContactViewController ()
 
+@property (strong, nonatomic) IBOutlet UITextField *Search_Field;
+@property (weak, nonatomic) IBOutlet UIButton *Search_Button;
 
 @end
 
-@implementation Contact
+@implementation AddContactViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:0.5]
     //[self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
     [self.navigationController.navigationBar setBarTintColor:UIColorFromRGB(0x067AB7)];
@@ -34,8 +37,29 @@
 //    lbNavTitle.text = NSLocalizedString(@"Let's Goal",@"");
 //    self.navigationItem.titleView = lbNavTitle;
     
+    self.Search_Field.delegate = self;
+    _Search_Field.layer.cornerRadius = 10;
+    
+    
     
 }
+
+
+
+- (IBAction)Back
+{
+    [self dismissViewControllerAnimated:YES completion:nil]; // ios 6
+}
+
+
+- (IBAction)Search_Contact
+{
+    
+    [KVNProgress showWithStatus:@"Searching"];
+    //connect to server and search
+    [KVNProgress showErrorWithStatus:@"Not Implemented Yet"];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
