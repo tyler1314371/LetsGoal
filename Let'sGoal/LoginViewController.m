@@ -19,6 +19,9 @@
 @property (strong, nonatomic) IBOutlet UITextField *PWD;
 @property (strong, nonatomic) IBOutlet UITextField *USN;
 @property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIView *Line;
+@property (weak, nonatomic) IBOutlet UIButton *Register;
+@property (weak, nonatomic) IBOutlet UIButton *Forgot_pwd;
 
 @end
 
@@ -70,6 +73,9 @@
     }
     
     
+    
+    _Line.layer.borderColor = [UIColor whiteColor].CGColor;
+    _Line.layer.borderWidth = 3.0f;
     
     
     
@@ -223,6 +229,18 @@
      }];
     
 
+}
+
+- (IBAction)Register:(id)sender {
+}
+
+- (IBAction)Forgot_Pwd:(id)sender {
+}
+
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 -(void)dismissKeyboard {
