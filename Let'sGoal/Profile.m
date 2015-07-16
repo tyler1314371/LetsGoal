@@ -52,6 +52,8 @@
         [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
              if (!error) {
+                 
+                 NSLog(@"%@",result);
                  _Name.text = [result objectForKey:@"name"];
              }
          }];
@@ -59,7 +61,19 @@
         
         
         NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/me/picture?type=large&return_ssl_resources=1&access_token=%@", [FBSDKAccessToken currentAccessToken].tokenString]];
+        
         NSData *imageData = [NSData dataWithContentsOfURL:pictureURL];
+        
+        
+            //get persistant storage image data
+         if ([imageData isEqualToData:imageData])
+         {
+             //don't do anything
+         }else
+         {
+             //update persistant storage
+             //send to server
+         }
         UIImage *fbImage = [UIImage imageWithData:imageData];
         _Profile_Pic.image = fbImage;
         _Profile_Pic.layer.cornerRadius=_Profile_Pic.frame.size.width/2;

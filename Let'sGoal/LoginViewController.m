@@ -35,10 +35,10 @@
 }
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     if (textField.tag == 0) {
-        textField.placeholder = @"UserName";
+        textField.placeholder = @"Password";
     }else
     {
-        textField.placeholder = @"Password";
+        textField.placeholder = @"UserName";
     }
     
 }

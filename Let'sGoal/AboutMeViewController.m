@@ -11,6 +11,10 @@
 
 @interface AboutMeViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *Save;
+@property (weak, nonatomic) IBOutlet UIButton *Profile_Button;
+@property (weak, nonatomic) IBOutlet UIButton *Email_Button;
+
 
 @end
 
@@ -27,6 +31,18 @@
     UIColor* grey90 = [UIColor colorWithWhite: 0.90 alpha:1];
     self.view.backgroundColor = grey90;
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    _Save.layer.cornerRadius = 3;
+    
+    
+    
+}
+
+
+
+
+- (IBAction)Save:(id)sender {
+    
 }
 
 
